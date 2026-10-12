@@ -1,5 +1,6 @@
 /* 경남형 농어촌유학 사이트 초안
-   레이아웃: 상단 고정 메뉴 + 한 화면에 한 페이지(해시 주소로 전환). 산(소나무 초록)과 남해(바다 파랑), 보리 노랑을 강조색으로 씀. */
+   레이아웃: 상단 고정 메뉴 + 한 화면에 한 페이지(해시 주소로 전환). 산(소나무 초록)과 남해(바다 파랑), 보리 노랑을 강조색으로 씀.
+   기기의 다크 모드 설정과 관계없이 항상 밝은 화면으로 보여 줌. */
 :root {
   --bg: #f6f8f4;
   --surface: #ffffff;
@@ -17,18 +18,7 @@
   --font-body: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
   --radius: 10px;
   --max: 1080px;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #121915; --surface: #1a231e; --ink: #e6ede8; --muted: #a3b2a9; --line: #2f3b34;
-    --pine: #6cc29c; --pine-soft: #1f3329; --sea: #7cb9de; --sea-soft: #1a2c38;
-    --barley: #e7c062; --barley-soft: #332b17; --on-pine: #0f1a14; color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #121915; --surface: #1a231e; --ink: #e6ede8; --muted: #a3b2a9; --line: #2f3b34;
-  --pine: #6cc29c; --pine-soft: #1f3329; --sea: #7cb9de; --sea-soft: #1a2c38;
-  --barley: #e7c062; --barley-soft: #332b17; --on-pine: #0f1a14; color-scheme: dark;
+  color-scheme: light;
 }
 
 * { box-sizing: border-box; }
